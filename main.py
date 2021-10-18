@@ -1,9 +1,13 @@
 import random
+
 print("Welcome to the start of my code")
 print("I am a random dice generator, in case you don't have any or a few at home!")
-number_of_dices = int(input("How many dices do you need? (Type in numbers only!)"))
-for i in range(number_of_dices):
-  n = random.randint(1, 6)
-  print("Dice " + str(i+1) + " results: " + str(n))
+
+dices = int(input("How many dices do you need (numbers only)? "))
+
+for dice in range(dices):
+    roll = random.randint(1, 6)
+    print(f"Dice #{dice + 1} results: {roll}")
+    
 print("Here you go, thank you for using my dice program to generate what you need :)")
-# My Own Self-generated program for people who need dices at home :)
+# My own self-generated program for people who need dices at home :)
